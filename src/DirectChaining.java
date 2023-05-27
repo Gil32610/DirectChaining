@@ -18,4 +18,20 @@ public class DirectChaining {
         }
         return sum % M;
     }
+
+    public void insertHashTable(String word) {
+        int newIndex = modASCIIHashFunction(word, hashTable.length);
+
+        if (hashTable[newIndex] == null) {
+            hashTable[newIndex] = new LinkedList<String>();
+            hashTable[newIndex].add(word);
+        } else hashTable[newIndex].add(word);
+    }
+
+    public void displayHashTable(){
+        if(hashTable == null){
+            System.out.println("EMPTY");
+            return;
+        }
+    }
 }
