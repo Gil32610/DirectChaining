@@ -32,6 +32,10 @@ public class DirectChaining {
         if(hashTable == null){
             System.out.println("EMPTY");
             return;
+        }else{
+            for (int i = 0; i <hashTable.length ; i++) {
+                System.out.println("Index: " + i + ", Key: " + hashTable[i]);
+            }
         }
     }
 }
